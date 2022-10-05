@@ -3,13 +3,20 @@
  *
  * Declare a variable called myFavoriteNumber on one line; assign it a value on
  * the next line.
- */
+ * */
+//let myFavoriteNumber;
+let myFavoriteNumber = 26;
+console.log(myFavoriteNumber);
 
 /*
  * Prompt 2:
  *
  * Declare 3 variables using each of let, const, and var.
- */
+ * */
+let myState = "Massachusetts"
+const myCity = "Boston"
+var myNeighborhood = "Brighton"
+console.log(myCity)
 
 /*
  * Prompt 3:
@@ -21,6 +28,12 @@
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
+let num1 = 26
+console.log(num1 + 4)
+console.log(num1 - 6)
+console.log(num1 * 3)
+console.log(num1 / 7)
+console.log(num1 % 2)
 
 /*
  * Prompt 4:
@@ -32,6 +45,10 @@
  * Create a variable called fullName and use addition to combine your firstName
  * and lastName variables.
  */
+let firstName = "Brandon"
+let lastName = "Chan"
+let fullName = `${firstName} ${lastName}`
+console.log(fullName)
 
 /*
  * Prompt 5:
@@ -42,7 +59,10 @@
  * Create a variable called message and use string interpolation to assign it
  * the value 'hello world!'.
  */
-
+let hello = "hello";
+let world = "world";
+let message = `${hello} ${world}`
+console.log(message)
 
 /*
  * Prompt 7:
@@ -56,19 +76,19 @@ let c = 57;
 let d = 16;
 let e = 'Kevin';
 
-// a _ b;
+a < b;
 
-// c _ d;
+c > d;
 
-// 'Name' ___ 'Name';
+'Name' === 'Name';
 
-// a _ b ___ c;
+a + b === c;
 
-// a _ a ___ d;
+a * a === d;
 
-// e ___ 'Kevin';
+e === 'Kevin';
 
-// 48 ___ '48';
+48 == '48';
 
 /*
  * Prompt 8:
@@ -82,19 +102,19 @@ c = -5;
 d = 3000;
 e = 'Jelly Bean';
 
-// a _ b;
+// a > b;
 
-// c _ d;
+// c > d;
 
-// 'Peanut' ___ 'Peanut';
+// 'Peanut' !== 'Peanut';
 
-// a _ b ___ c;
+// a + b === c;
 
-// a _ a ___ d;
+// a + a === d;
 
-// e ___ 'Jelly Bean';
+// e !== 'Jelly Bean';
 
-// 48 ___ '48';
+// 48 === '48';
 
 /*
  * Prompt 9:
@@ -103,15 +123,18 @@ e = 'Jelly Bean';
  */
 
 let array1 = ['Marty Marion', 'Marty Feldman', 'Marty McFly', 'Marty Marion'];
+console.log(array1[2])
 let array2 = [
   ['Marty Feldman', 'Marty Marion'],
   ['Marty Stuart', 'Marty McFly'],
   ['Marty Jannetty', 'Marty Robbins']
 ];
+console.log(array2[1][1]);
 let array3 = [
   ['Marty Feldman', ['Marty Marion']],
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
+console.log(array3[1][1][1][0]);
 
 /*
  * Prompt 10:
@@ -120,7 +143,9 @@ let array3 = [
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
-
+console.log(array4.length);
+console.log(array4[3]);
+console.log(array4[array4.length - 2]);
 /*
  * Prompt 11:
  *
@@ -134,10 +159,20 @@ let cathleen = ['Cathleen', 186, 'New York'];
 
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Gameboy".
+thom.shift();
+thom.unshift("Gameboy");
+console.log(thom);
 
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
+karolin.splice(1, 1, 17)
+console.log(karolin)
 
 // Change Cathleen's hometown from New York to "Gotham City".
+cathleen.splice(2, 1, "Gotham City")
+console.log(cathleen)
 
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+kristyn.pop()
+kristyn.push("Oakland")
+console.log(kristyn)
